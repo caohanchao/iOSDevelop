@@ -1,5 +1,5 @@
 //
-//  TSystemAuthorizationManager.h
+//  SystemAuthorizationManager.h
 //  timingapp
 //
 //  Created by caohanchao on 2021/2/23.
@@ -34,9 +34,9 @@ typedef NS_ENUM(NSUInteger, SystemAuthorizationStatus) {
     SystemAuthorizationStatusUnidentified,  //未识别
 };
 
-#define SystemAuthorizationShared [TSystemAuthorizationManager sharedInstance]
+#define SystemAuthorizationShared [SystemAuthorizationManager sharedInstance]
 
-@interface TSystemAuthorizationManager : NSObject
+@interface SystemAuthorizationManager : NSObject
 
 AS_SINGLETON(TSystemAuthorizationManager)
 

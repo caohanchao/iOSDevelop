@@ -1,18 +1,18 @@
 //
-//  TSystemAuthorizationManager.m
+//  SystemAuthorizationManager.m
 //  timingapp
 //
 //  Created by caohanchao on 2021/2/23.
 //  Copyright © 2021 huiian. All rights reserved.
 //
 
-#import "TSystemAuthorizationManager.h"
+#import "SystemAuthorizationManager.h"
 #import <Speech/Speech.h>
 #import "TLocationManager.h"
-@implementation TSystemAuthorizationManager
+@implementation SystemAuthorizationManager
 
 + (instancetype)sharedInstance {
-    static TSystemAuthorizationManager *_sharedSingleton = nil;
+    static SystemAuthorizationManager *_sharedSingleton = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedSingleton = [[super allocWithZone:NULL] init];
